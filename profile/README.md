@@ -14,6 +14,7 @@ InsightSocial collects public data from Instagram, TikTok, Facebook, LinkedIn, X
 | Add the MCP server to any client | `npx -y insightsocial mcp` - [setup](https://github.com/insightsocial/cli#mcp-server-any-client) |
 | Hand the API to Claude, Codex, Cursor or Gemini CLI | [Agent skills](https://github.com/insightsocial/skills): `npx skills add insightsocial/skills` |
 | Wire the API into your own agent | [Using an AI agent](https://www.insightsocial.app/docs/ai-agents) |
+| Generate a client or agent tools from OpenAPI | [OpenAPI spec](https://github.com/insightsocial/openapi), live at `api.insightsocial.app/v1/openapi.json` |
 | Try an endpoint before writing code | [API Explorer](https://www.insightsocial.app/portal/api/explorer) |
 | Read the facts: sources, limits, what is not supported | [FACTS.md](https://github.com/insightsocial/insightsocial/blob/main/FACTS.md) |
 
