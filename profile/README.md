@@ -10,7 +10,8 @@ InsightSocial collects public data from Instagram, TikTok, Facebook, LinkedIn, X
 | --- | --- |
 | Export data from a page you have open, no code | [Install the Chrome extension](https://chromewebstore.google.com/detail/free-social-scraper-expor/cddgiejchlkeedmhjeodlcjdiddlcdld) |
 | Call the API from code | [Quickstart](https://www.insightsocial.app/docs/quickstart) |
-| Hand the API to Claude, ChatGPT or Cursor | [Using an AI agent](https://www.insightsocial.app/docs/ai-agents) |
+| Hand the API to Claude, Codex, Cursor or Gemini CLI | [Agent skills](https://github.com/insightsocial/skills): `npx skills add insightsocial/skills` |
+| Wire the API into your own agent | [Using an AI agent](https://www.insightsocial.app/docs/ai-agents) |
 | Try an endpoint before writing code | [API Explorer](https://www.insightsocial.app/portal/api/explorer) |
 | Read the facts: sources, limits, what is not supported | [FACTS.md](https://github.com/insightsocialxyz/insightsocial/blob/main/FACTS.md) |
 
