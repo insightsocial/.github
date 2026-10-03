@@ -15,7 +15,7 @@ InsightSocial collects public data from Instagram, TikTok, Facebook, LinkedIn, X
 | Hand the API to Claude, Codex, Cursor or Gemini CLI | [Agent skills](https://github.com/insightsocial/skills): `npx skills add insightsocial/skills` |
 | Wire the API into your own agent | [Using an AI agent](https://www.insightsocial.app/docs/ai-agents) |
 | Try an endpoint before writing code | [API Explorer](https://www.insightsocial.app/portal/api/explorer) |
-| Read the facts: sources, limits, what is not supported | [FACTS.md](https://github.com/insightsocialxyz/insightsocial/blob/main/FACTS.md) |
+| Read the facts: sources, limits, what is not supported | [FACTS.md](https://github.com/insightsocial/insightsocial/blob/main/FACTS.md) |
 
 ## The API
 
