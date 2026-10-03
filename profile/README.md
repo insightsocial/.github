@@ -22,7 +22,7 @@ InsightSocial collects public data from Instagram, TikTok, Facebook, LinkedIn, X
 
 ## The API
 
-240+ GET endpoints over nine platforms. Every call uses the same `x-api-key` header and returns the same JSON envelope, so switching platforms means changing one path segment.
+239 GET endpoints over nine platforms. Every call uses the same `x-api-key` header and returns the same JSON envelope, so switching platforms means changing one path segment.
 
 ```bash
 curl "https://api.insightsocial.app/v1/tiktok/profile?handle=nasa" \
