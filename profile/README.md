@@ -15,6 +15,8 @@ InsightSocial collects public data from Instagram, TikTok, Facebook, LinkedIn, X
 | Hand the API to Claude, Codex, Cursor or Gemini CLI | [Agent skills](https://github.com/insightsocial/skills): `npx skills add insightsocial/skills` |
 | Wire the API into your own agent | [Using an AI agent](https://www.insightsocial.app/docs/ai-agents) |
 | Generate a client or agent tools from OpenAPI | [OpenAPI spec](https://github.com/insightsocial/openapi), live at `api.insightsocial.app/v1/openapi.json` |
+| Get this week's top TikToks and Reels in your niche, plus a brief on why they spread, every morning in n8n | [n8n-viral-content-radar](https://github.com/insightsocial/n8n-viral-content-radar) |
+| Build a list of Instagram creators in your niche with their contact emails, in n8n | [n8n-creator-outreach-list](https://github.com/insightsocial/n8n-creator-outreach-list) |
 | Try an endpoint before writing code | [API Explorer](https://www.insightsocial.app/portal/api/explorer) |
 | Read the facts: sources, limits, what is not supported | [FACTS.md](https://github.com/insightsocial/insightsocial/blob/main/FACTS.md) |
 
