@@ -1,15 +1,16 @@
 # InsightSocial
 
-**Public data from nine social platforms. One account, one credit balance.**
+**Social media data API, MCP server and Chrome extension. Public data from 25 platforms, one account, one credit balance.**
 
-InsightSocial collects public data from Instagram, TikTok, Facebook, LinkedIn, X (Twitter), Threads, YouTube, Reddit and Pinterest, and hands it to you as rows: posts, comments, profiles, followers and contact details. There are two ways in. A Chrome extension scrapes the pages you are already looking at, with no code. A REST API returns the same kinds of data to your scripts and AI agents. Both draw on the same credit balance.
+InsightSocial collects public data from Instagram, TikTok, Facebook, LinkedIn, X (Twitter), Threads, YouTube, Reddit, Pinterest, Bluesky, Telegram, Twitch and 13 more platforms, and hands it to you as rows: posts, comments, profiles, followers and contact details. There are two ways in. A REST API and a hosted MCP server return that data to your scripts and AI agents, across all 25 platforms. A Chrome extension scrapes the pages you are already looking at, with no code, on 9 of them. Both draw on the same credit balance.
 
 ## Start here
 
 | You want to | Go to |
 | --- | --- |
-| Export data from a page you have open, no code | [Install the Chrome extension](https://chromewebstore.google.com/detail/free-social-scraper-expor/cddgiejchlkeedmhjeodlcjdiddlcdld) |
+| Export data from a page you have open, no code | [Install the Chrome extension](https://chromewebstore.google.com/detail/insightsocial-free-social/cddgiejchlkeedmhjeodlcjdiddlcdld) |
 | Call the API from code | [Quickstart](https://www.insightsocial.app/docs/quickstart) |
+| Connect Claude, ChatGPT or another AI app with one URL and a sign-in | [Hosted MCP server](https://www.insightsocial.app/mcp): `https://api.insightsocial.app/mcp` |
 | Set up your coding agent in one command (key, skill, MCP) | [CLI](https://github.com/insightsocial/cli): `npx -y insightsocial init` |
 | Add the MCP server to any client | `npx -y insightsocial mcp` - [setup](https://github.com/insightsocial/cli#mcp-server-any-client) |
 | Hand the API to Claude, Codex, Cursor or Gemini CLI | [Agent skills](https://github.com/insightsocial/skills): `npx skills add insightsocial/skills` |
@@ -23,14 +24,14 @@ InsightSocial collects public data from Instagram, TikTok, Facebook, LinkedIn, X
 
 ## The API
 
-239 GET endpoints over nine platforms. Every call uses the same `x-api-key` header and returns the same JSON envelope, so switching platforms means changing one path segment.
+300+ GET endpoints over 25 platforms. Every call uses the same `x-api-key` header and returns the same JSON envelope, so switching platforms means changing one path segment.
 
 ```bash
 curl "https://api.insightsocial.app/v1/tiktok/profile?handle=nasa" \
   -H "x-api-key: $INSIGHTSOCIAL_API_KEY"
 ```
 
-- **Priced per endpoint.** A profile lookup costs 20 credits. Metered endpoints, such as paginated comments, hold a ceiling and charge only what the call used.
+- **Priced per endpoint.** A profile lookup costs 10 credits. Metered endpoints, such as paginated comments, hold a ceiling and charge only what the call used.
 - **Failed calls and empty results are free.** Every response reports `credits_used` and `credits_remaining`.
 - **Free catalogue.** `GET https://api.insightsocial.app/v1/endpoints` lists every path, parameter and price. It needs no key, so an agent can plan a job and price it before it spends anything.
 
